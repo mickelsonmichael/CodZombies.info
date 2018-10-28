@@ -1,0 +1,8 @@
+
+.chk-icon {
+    margin-right: 5px;
+}
+
+.chk:checked ~ .chk-icon::before {
+    content: '\f14a';
+}
