@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="../css/zombies.css" />
 </head>
 
@@ -401,10 +402,15 @@
                 <h3 class="border-bottom display-4" id="Planets">Planets</h3>
 
                 <div class="row">
-                    <div class="col-3">
+
+                    <!-- Sun -->
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
+                            <img class="card-img-top" src="../images/sun-symbol.PNG" alt="Sun Symbol" />
                             <div class="card-body">
                                 <h3 class="card-title ">Sun</h3>
+
+                                <p><a data-fancybox href="../images/sun-location.PNG">Location</a></p>
 
                                 <label for="sun-symbol" class="h5">
                                     <input type="checkbox" class="d-none chk" name="sun-symbol" id="sun-symbol" />
@@ -412,14 +418,11 @@
                                     Symbol
                                 </label>
 
-                                <hr />
-
                                 <div class="form-group">
                                     <label>Order</label>
                                     <input type="text" class="form-control" />
                                 </div>
 
-                                <hr />
 
                                 <label for="sun-orb" class="h5">
                                     <input type="checkbox" class="d-none chk" name="sun-orb" id="sun-orb" />
@@ -430,7 +433,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title ">Mercury</h3>
@@ -458,7 +461,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title ">Venus</h3>
@@ -486,7 +489,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title ">Moon</h3>
@@ -514,7 +517,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title ">Mars</h3>
@@ -542,10 +545,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+
+                    <!-- Jupiter -->
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
+                            <img class="card-img-top" alt="Jupiter Symbol" src="../images/jupiter-symbol.PNG" />
                             <div class="card-body">
                                 <h3 class="card-title ">Jupiter</h3>
+
+                                <p>
+                                    <a data-fancybox href="../images/jupiter-location.PNG" title="Jupiter">Location</a>
+                                </p>
 
                                 <label for="Jupiter-symbol" class="h5">
                                     <input type="checkbox" class="d-none chk" name="Jupiter-symbol" id="Jupiter-symbol" />
@@ -570,10 +580,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
+                            <img class="card-img-top" src="../images/saturn-symbol.PNG" alt="Neptune Symbol" />
                             <div class="card-body">
                                 <h3 class="card-title ">Saturn</h3>
+
+                                <p>
+                                    <a href="../images/saturn-location.PNG" data-fancybox>Location</a>
+                                </p>
 
                                 <label for="Saturn-symbol" class="h5">
                                     <input type="checkbox" class="d-none chk" name="Saturn-symbol" id="Saturn-symbol" />
@@ -599,10 +614,15 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
+                            <img class="card-img-top" alt="Neptune Symbol" src="../images/neptune-symbol.PNG" />
                             <div class="card-body">
                                 <h3 class="card-title ">Neptune</h3>
+
+                                <p>
+                                    <a href="../images/neptune-location.PNG" data-fancybox>Location</a>
+                                </p>
 
                                 <label for="Neptune-symbol" class="h5">
                                     <input type="checkbox" class="d-none chk" name="Neptune-symbol" id="Neptune-symbol" />
@@ -627,7 +647,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-6 col-md-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title ">Uranus</h3>
@@ -663,6 +683,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
     <script src="../js/zombies.js"></script>
 </body>
 
