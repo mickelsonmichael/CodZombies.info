@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv=X-US-Compatible content="IE=edge" />
-    <meta char=UTF-8 />
+    <meta charset=UTF-8 />
     <meta name=viewport content="width=device-width, initial-scale=1.0" />
 
     <title>Black Ops 4 - Voyage of Despair</title>
@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
         <a class="navbar-brand" href="#">Zombies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarsExampleDefault"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,16 +47,22 @@
 
             <form>
                 <div class="col-12">
-                    <h2 id="Clocks" class="display-4 border-bottom">Clocks</h2>
+                    <h2 class="border-bottom display-4 d-flex align-items-center" id="Clocks">
+                        <span class="mr-auto">Clocks</span>
+                        <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Clocks"><span
+                                class="fas fa-redo"></span></button>
+                    </h2>
 
                     <div class="row">
 
                         <!-- Fire Clock -->
-                        <div class="col">
+                        <div class="col-6 col-sm-3 mb-2">
                             <div class="card bg-danger">
                                 <img class="card-img-top p-3" src="../images/fire.svg" alt="Fire" />
                                 <div class="card-body">
-                                    <h3 class="card-title">Fire</h3>
+                                    <h3 class="card-title">
+                                        Fire
+                                    </h3>
 
                                     <div class="form-group">
                                         <label>Location</label>
@@ -90,7 +96,7 @@
                         </div>
 
                         <!-- Water Clock -->
-                        <div class="col">
+                        <div class="col-6 col-sm-3 mb-2">
                             <div class="card bg-primary">
                                 <img class="card-img-top p-3" src="../images/water.svg" alt="water" />
                                 <div class="card-body">
@@ -128,7 +134,7 @@
                         </div>
 
                         <!-- Air Clock -->
-                        <div class="col">
+                        <div class="col-6 col-sm-3 mb-2">
                             <div class="card bg-info">
                                 <img class="card-img-top p-3" src="../images/air.svg" alt="air" />
                                 <div class="card-body">
@@ -166,7 +172,7 @@
                         </div>
 
                         <!-- Earth Clock -->
-                        <div class="col">
+                        <div class="col-6 col-sm-3 mb-2">
                             <div class="card bg-success">
                                 <img class="card-img-top p-3" src="../images/earth.svg" alt="earth" />
                                 <div class="card-body">
@@ -204,17 +210,6 @@
                         </div>
 
                     </div>
-
-                    <br>
-
-                    <div class="row">
-                        <div class="col">
-                            <button type="reset" class="btn btn-lg btn-primary">Reset Clock Fields</button>
-                        </div>
-                    </div>
-
-                    <br />
-
                     <div class="row">
                         <div class="col">
                             <div class="alert alert-primary">
@@ -240,13 +235,17 @@
 
         <div class="row">
             <div class="col-12">
-                <h2 class="border-bottom display-4" id="Outlets">Outlets</h2>
-
                 <form>
+                    <h2 class="border-bottom display-4 d-flex align-items-center" id="Outlets">
+                        <span class="mr-auto">Outlets</span>
+                        <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Outlets"><span
+                                class="fas fa-redo"></span></button>
+                    </h2>
+
                     <div class="row">
 
                         <!-- Acid Outlet -->
-                        <div class="col">
+                        <div class="col-6 col-md-3 mb-2">
                             <div class="card bg-success">
                                 <div class="card-body">
                                     <h3 class="card-title">Acid</h3>
@@ -263,16 +262,17 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="acid-done" />
-                                        <label for="acid-done" class="form-check-label">Done</label>
-                                    </div>
+                                    <label for="acid-done" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="acid-done" id="acid-done" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Done
+                                    </label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Water Outlet -->
-                        <div class="col">
+                        <div class="col-6 col-md-3 mb-2">
                             <div class="card bg-primary">
                                 <div class="card-body">
 
@@ -289,16 +289,17 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="water-done" />
-                                        <label for="water-done" class="form-check-label">Done</label>
-                                    </div>
+                                    <label for="water-done" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="water-done" id="water-done" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Done
+                                    </label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Electric Outlet -->
-                        <div class="col">
+                        <div class="col-6 col-md-3 mb-2">
                             <div class="card bg-warning">
                                 <div class="card-body">
 
@@ -315,16 +316,17 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="ele-done" />
-                                        <label for="ele-done" class="form-check-label">Done</label>
-                                    </div>
+                                    <label for="elec-done" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="elec-done" id="elec-done" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Done
+                                    </label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Fire Outlet -->
-                        <div class="col">
+                        <div class="col-6 col-md-3 mb-2">
                             <div class="card bg-danger">
 
                                 <div class="card-body">
@@ -341,18 +343,16 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="fire-done" />
-                                        <label for="fire-done" class="form-check-label">Done</label>
-                                    </div>
+
+                                    <label for="fire-done" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="fire-done" id="fire-done" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Done
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <br />
-                    <button type="reset" class="btn btn-lg btn-primary">Reset Outlet Fields</button>
                 </form>
 
                 <br />
@@ -399,290 +399,356 @@
 
         <div class="row">
             <div class="col-12">
-                <h3 class="border-bottom display-4" id="Planets">Planets</h3>
+                <form>
+                    <h3 class="border-bottom display-4 d-flex align-items-center" id="Planets">
+                        <span class="mr-auto">Planets</span>
+                        <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Planets"><span
+                                class="fas fa-redo"></span></button>
+                    </h3>
+                    <div class="row">
 
-                <div class="row">
+                        <!-- Sun -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Sun</h3>
+                                    <p>
+                                        <a data-fancybox href="../images/sun-symbol.png" title="Sun Symbol"><span class="fas fa-2x fa-moon"></span><span
+                                                class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/sun-location.PNG" title="Sun Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
 
-                    <!-- Sun -->
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <img class="card-img-top" src="../images/sun-symbol.PNG" alt="Sun Symbol" />
-                            <div class="card-body">
-                                <h3 class="card-title ">Sun</h3>
+                                    <label for="sun-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="sun-symbol" id="sun-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
 
-                                <p><a data-fancybox href="../images/sun-location.PNG">Location</a></p>
+                                    <br />
 
-                                <label for="sun-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="sun-symbol" id="sun-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
+                                    <label for="sun-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="sun-orb" id="sun-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
 
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Mercury -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Mercury</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/mercury-symbol.png" title="Mercury Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/mercury-location.png" title="Mercury Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="mercury-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="mercury-symbol" id="mercury-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="mercury-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="mercury-orb" id="mercury-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
 
 
-                                <label for="sun-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="sun-orb" id="sun-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Venus -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Venus</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/venus-symbol.png" title="Venus Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/venus-location.PNG" title="Venus Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="Venus-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Venus-symbol" id="Venus-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Venus-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Venus-orb" id="Venus-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Moon -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Moon</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/moon-symbol.png" title="Moon Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/moon-location.PNG" title="Moon Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="Moon-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Moon-symbol" id="Moon-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Moon-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Moon-orb" id="Moon-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mars -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Mars</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/mars-symbol.png" title="Mars Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/mars-location.PNG" title="Mars Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+
+                                    <label for="Mars-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Mars-symbol" id="Mars-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Mars-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Mars-orb" id="Mars-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Jupiter -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Jupiter</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/Jupiter-symbol.png" title="Jupiter Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/Jupiter-location.PNG" title="Jupiter Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="Jupiter-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Jupiter-symbol" id="Jupiter-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Jupiter-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Jupiter-orb" id="Jupiter-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Saturn -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Saturn</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/Saturn-symbol.png" title="Saturn Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/Saturn-location.PNG" title="Saturn Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="Saturn-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Saturn-symbol" id="Saturn-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Saturn-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Saturn-orb" id="Saturn-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Neptune -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Neptune</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/Neptune-symbol.png" title="Neptune Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/Neptune-location.PNG" title="Neptune Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="Neptune-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Neptune-symbol" id="Neptune-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Neptune-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Neptune-orb" id="Neptune-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Uranus -->
+                        <div class="col-sm-6 col-md-4 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title ">Uranus</h3>
+
+                                    <p>
+                                        <a data-fancybox href="../images/Uranus-symbol.png" title="Uranus Symbol"><span
+                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
+                                        <a data-fancybox href="../images/Uranus-location.PNG" title="Uranus Location"><span
+                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                    </p>
+
+                                    <label for="Uranus-symbol" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Uranus-symbol" id="Uranus-symbol" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Symbol
+                                    </label>
+
+                                    <br />
+
+                                    <label for="Uranus-orb" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="Uranus-orb" id="Uranus-orb" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Orb
+                                    </label>
+
+                                    <div class="form-group">
+                                        <label>Order</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title ">Mercury</h3>
-
-                                <label for="mercury-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="mercury-symbol" id="mercury-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="mercury-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="mercury-orb" id="mercury-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title ">Venus</h3>
-
-                                <label for="Venus-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Venus-symbol" id="Venus-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Venus-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Venus-orb" id="Venus-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title ">Moon</h3>
-
-                                <label for="Moon-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Moon-symbol" id="Moon-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Moon-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Moon-orb" id="Moon-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title ">Mars</h3>
-
-                                <label for="Mars-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Mars-symbol" id="Mars-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Mars-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Mars-orb" id="Mars-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Jupiter -->
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <img class="card-img-top" alt="Jupiter Symbol" src="../images/jupiter-symbol.PNG" />
-                            <div class="card-body">
-                                <h3 class="card-title ">Jupiter</h3>
-
-                                <p>
-                                    <a data-fancybox href="../images/jupiter-location.PNG" title="Jupiter">Location</a>
-                                </p>
-
-                                <label for="Jupiter-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Jupiter-symbol" id="Jupiter-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Jupiter-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Jupiter-orb" id="Jupiter-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <img class="card-img-top" src="../images/saturn-symbol.PNG" alt="Neptune Symbol" />
-                            <div class="card-body">
-                                <h3 class="card-title ">Saturn</h3>
-
-                                <p>
-                                    <a href="../images/saturn-location.PNG" data-fancybox>Location</a>
-                                </p>
-
-                                <label for="Saturn-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Saturn-symbol" id="Saturn-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Saturn-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Saturn-orb" id="Saturn-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <img class="card-img-top" alt="Neptune Symbol" src="../images/neptune-symbol.PNG" />
-                            <div class="card-body">
-                                <h3 class="card-title ">Neptune</h3>
-
-                                <p>
-                                    <a href="../images/neptune-location.PNG" data-fancybox>Location</a>
-                                </p>
-
-                                <label for="Neptune-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Neptune-symbol" id="Neptune-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Neptune-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Neptune-orb" id="Neptune-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title ">Uranus</h3>
-
-                                <label for="Uranus-symbol" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Uranus-symbol" id="Uranus-symbol" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Symbol
-                                </label>
-
-                                <hr />
-
-                                <div class="form-group">
-                                    <label>Order</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-
-                                <hr />
-
-                                <label for="Uranus-orb" class="h5">
-                                    <input type="checkbox" class="d-none chk" name="Uranus-orb" id="Uranus-orb" />
-                                    <span class="far fa-square chk-icon"></span>
-                                    Orb
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>
 
             </div>
         </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
     <script src="../js/zombies.js"></script>
