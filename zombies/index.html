@@ -52,8 +52,13 @@
                 <div class="col-12">
                     <h2 class="border-bottom display-4 d-flex align-items-center" id="Clocks">
                         <span class="mr-auto">Clocks</span>
-                        <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Clocks"><span
-                                class="fas fa-redo"></span></button>
+
+                        <button type="button" class="btn btn-lg btn-primary flex-shrink-1 mr-1" title="Help" data-toggle="modal" data-target="#clocks-modal">
+                            <span class="fas fa-question"></span>
+                        </button>
+                        <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Clocks">
+                            <span class="fas fa-redo"></span>
+                        </button>
                     </h2>
 
                     <div class="row">
@@ -877,6 +882,82 @@
         </div>
     </section>
 
+    <!-- Clock Guide -->
+    <div class="modal fade" id="clocks-modal" tabindex="-1" role="dialog" aria-labelledby="clocks-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="clocks-modal-label">Clocks and Symbols</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h6><b>Finding the Symbols</b></h6>
+                  <p>
+                      Once you have activated the Artifact for the first time, a series of Symbols will appear in four locations across the map.
+                      These locations are picked randomly from a pool of six locations.
+                  </p>
+
+                  <p>
+                      In order to solve this puzzle, you must locate all four symbols, which are commonly refered to as Fire, Water, Air, and Earth.
+                      Once you find a symbol, you must located the associated clock, which is found nearby in the same room.
+                      If your memory is strong, you can try to memorize all the symbols and their associated times, or you can use the site you're on to keep a quick record.
+                  </p>
+
+                  <h6><b>Setting the Dials</b></h6>
+
+                  <p>
+                      Once you have found all four symbols, you must match several dials found around the ship to these clocks.
+                      You must go to either the Bridge, Poop Deck (artifact spawn), or Engine Room.
+                      At each of these locations you will find several radial levers that can be adjusted using the action key (<kbd>F</kbd> on PC).
+                      Adjusting to the right by aiming to the right side of the dial will increase the time by one interval.
+                      On dials using minutes, this is a 5 minute segment.
+                      On dials using hours, this is a 1 hour segment.
+                      Follow the associated guides below to solve the dials at each location.
+                  </p>
+
+                  <h6>Bridge</h6>
+                  <p>
+                      Inspect each of the levers found on the bridge carefully. 
+                      You will notice there are symbols on 4 of the dials.
+                      These dials will represent the <b>minute</b> hands for each of the clocks.
+                      Simply set the proper dial to the minutes on the associated clock.
+                  </p>
+                  <p>
+                      e.g. If your Fire clock was set to 3:55, move the fire lever one notch to the left.
+                  </p>
+
+                  <h6>Poop Deck</h6>
+                  <p>
+                      There are only two, unmarked dials found in the same spot the Artifact spawned (on top of a catwalk).
+                      The left dial is associated with the <b>hour</b> hand of the Air symbol.
+                        The right dial is associated with the <b>hour</b> hand of the Earth symbol.
+                        <a data-fancybox href="voyage/images/poopdeck-dials.png">See this image</a>
+                  </p>
+
+                  <h6>Engine Room</h6>
+                  <p>
+                      Directly down the stairs in front of Odin's altar, you will find the final two dials.
+                      While there are four dials on the pipes, only the bottom left and top right are moveable.
+                      The boottom left dial is associated with the <b>hour</b> hand of the Fire symbol.
+                      The top right dial is associated with the <b>hour</b> hand of the Water symbol.
+                      <br />
+                      <a data-fancybox href="voyage/images/engineroom-dials.png">See this image</a>
+                  </p>
+
+                  <h6><b>Wrapping Up</b></h6>
+                  <p>
+                      You will know you have set all eight dials properly when you hear a loud, ominous sound and the dials can no longer be moved.
+                      You are ready to move on to the next step: Outlets
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <!-- Kraken Guide -->
     <div class="modal fade" id="kraken-modal" tabindex="-1" role="dialog" aria-labelledby="kraken-modal" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
