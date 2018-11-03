@@ -36,11 +36,12 @@
                     <a class="nav-link" href="#Outlets">Outlets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Planets">Planets</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#kraken-modal" data-toggle="modal" data-target="#kraken-modal">Kraken</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Planets">Planets</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
@@ -246,6 +247,11 @@
                 <form>
                     <h2 class="border-bottom display-4 d-flex align-items-center" id="Outlets">
                         <span class="mr-auto">Outlets</span>
+
+                        <button type="button" class="btn btn-lg btn-primary flex-shrink-1 mr-1" title="Help" data-toggle="modal" data-target="#outlet-modal">
+                            <span class="fas fa-question"></span>
+                        </button>
+
                         <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Outlets"><span
                                 class="fas fa-redo"></span></button>
                     </h2>
@@ -565,10 +571,10 @@
                                             <span class="sr-only">Symbol</span>
                                         </a>
 
-                                        <!-- <a data-fancybox href="images/venus-location.PNG" title="Venus Location" class="mr-1">
+                                        <a data-fancybox href="images/venus-location.PNG" title="Venus Location" class="mr-1">
                                             <span class="far fa-2x fa-map"></span>
                                             <span class="sr-only">Location</span>
-                                        </a> -->
+                                        </a>
 
                                         <a data-fancybox href="videos/venus-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
@@ -957,6 +963,73 @@
           </div>
 
 
+<!-- Outlet Guide -->
+<div class="modal fade" id="outlet-modal" tabindex="-1" role="dialog" aria-labelledby="outlet-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="outlet-modal-label">Outlets and Portals</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h6><b>Finding the Outlets</b></h6>
+          <p>
+              <b>This step must be completed after the clocks step.</b>
+              If you have not completed the Clocks step, the outlets will not be activated.
+          </p>
+
+          <p>
+              There are six outlets hidden throughout the ship.
+              During this section of the Easter Egg, four of them will be spewing different elements.
+              One poison, one fire, one water, and one electricity.
+              You may need to watch the outlets for several seconds in order to see the effect.
+              <b>Note: if you activate an outlet, all other outlets will go inert until the end of the round.</b>
+          </p>
+
+          <hr />
+
+          <h6><b>Activating the Outlets</b></h6>
+
+          <p>
+              In order to activate an outlet, you must kill a zombie of the appropriate type in front of it.
+              For example, to activate the fire outlet, you must lure a fire zombie in front of the outlet, then kill it.
+          </p>
+
+          <p>
+              You will know you have activated the outlet when a large, orange portal appears on the ground in front of it.
+          </p>
+
+          <p>
+              Only one portal may be activated per round, and once a portal has been activated, all the other outlets will be inert until the round is finished.
+              Once all four portals have been activated, you can proceed to the next section.
+          </p>
+
+          <hr />
+
+          <h6><b>Entering the Portals</b></h6>
+          <p>
+              Once all portals have been activated, you will need to enter them in a particular order (<b>Poison/Acid -> Water -> Electric -> Fire</b>).
+              To activate, all players must stand on the portal and hold their action keys/buttons (<kbd>F</kbd> on PC).
+              Then, the players will be teleported to a certain part of the ship, with all the entrances sealed off.
+              You will be locked in this area until all enemies have been slain.
+          </p>
+
+          <p>
+              Once all the enemies are dead, the doors will open and the Artifact will float within reach, allowing you to pick it up again.
+              <b>Do not forget to pick up the Artifact or you will have to start the portals over again.</b>
+          </p>
+
+          <p>
+              Once all four portals are completed, you will be ready to enter the next step: Flooding the Engine Room.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Kraken Guide -->
     <div class="modal fade" id="kraken-modal" tabindex="-1" role="dialog" aria-labelledby="kraken-modal" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -969,6 +1042,12 @@
             </div>
             <div class="modal-body">
                 <form>
+                    <p>The Kraken is a two-barreled cannon that can be rewarded by the Mystery Box.
+                        It can be Pack-a-Punched once, but also be upgraded using the Distillery Kit in the Engine Room.
+                    </p>
+
+                    <br />
+
                     <p>In order to receive a <i>free</i> Kraken, you must appease the Kraken chest.
                         The chest will spawn in one of five locations. In order to open it, you must skill a <b>Stoker</b> and pick up the key he drops.
                         Once you have the key, open the chest and begin killing zombies near it. Blue orbs will fly from a fallen zombie's body into the chest.
