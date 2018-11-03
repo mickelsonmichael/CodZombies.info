@@ -38,6 +38,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#Planets">Planets</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kraken-modal" data-toggle="modal" data-target="#kraken-modal">Kraken</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -262,6 +265,14 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
+                                    <label for="acid-ready" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="acid-ready" id="acid-ready" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Ready
+                                    </label>
+
+                                    <br />
+
                                     <label for="acid-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="acid-done" id="acid-done" />
                                         <span class="far fa-square chk-icon"></span>
@@ -289,6 +300,15 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
+                                    <label for="water-ready" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="water-ready" id="water-ready" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Ready
+                                    </label>
+
+                                    <br />
+
+
                                     <label for="water-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="water-done" id="water-done" />
                                         <span class="far fa-square chk-icon"></span>
@@ -316,6 +336,14 @@
                                             <option>State Rooms (Spawn)</option>
                                         </select>
                                     </div>
+
+                                    <label for="elec-ready" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="elec-ready" id="elec-ready" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Ready
+                                    </label>
+                                    <br />
+
                                     <label for="elec-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="elec-done" id="elec-done" />
                                         <span class="far fa-square chk-icon"></span>
@@ -344,6 +372,14 @@
                                         </select>
                                     </div>
 
+                                    <label for="fire-ready" class="h5">
+                                        <input type="checkbox" class="d-none chk" name="fire-ready" id="fire-ready" />
+                                        <span class="far fa-square chk-icon"></span>
+                                        Ready
+                                    </label>
+
+                                    <br />
+
                                     <label for="fire-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="fire-done" id="fire-done" />
                                         <span class="far fa-square chk-icon"></span>
@@ -358,7 +394,7 @@
                 <br />
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-6">
                         <div class="alert alert-primary">
                             <h3 class="alert-heading"><span class="fas fa-info-circle"></span> Outlet Locations</h3>
 
@@ -368,17 +404,16 @@
                                 <li>1st Class Lounge - Near the Zues altar</li>
                                 <li>3rd Class Berths - Bottom of the metal staircase on a white wall</li>
                                 <li>
-                                    <a data-fancybox href="https://youtu.be/q4Tk9Wieb_c">Dining Hall</a> - Near the Ra altar
+                                    <a data-fancybox href="https://youtu.be/q4Tk9Wieb_c">Dining Hall</a> - Near the Ra
+                                    altar
                                 </li>
                                 <li>Grand Staircase - Between the clock and the symbol location</li>
                                 <li>State Rooms - In a room beside some paintings on the floor</li>
                             </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm-6">
                         <div class="alert alert-danger">
                             <h3 class="alert-heading"><span class="fas fa-exclamation-circle"></span> Outlet Order</h3>
                             <p>You <b>must</b> use the portals created by the outlets in a particular order. The order
@@ -415,10 +450,15 @@
                                 <div class="card-body">
                                     <h3 class="card-title ">Sun</h3>
                                     <p>
-                                        <a data-fancybox href="../images/sun-symbol.PNG" title="Sun Symbol"><span class="fas fa-2x fa-moon"></span><span
-                                                class="sr-only">Symbol</span></a>
-                                        <a data-fancybox href="../images/sun-location.PNG" title="Sun Location"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                        <a data-fancybox href="../images/sun-symbol.PNG" title="Sun Symbol" class="mr-1">
+                                            <span class="fas fa-2x fa-moon"></span>
+                                            <span class="sr-only">Symbol</span>
+                                        </a>
+
+                                        <a data-fancybox href="../images/sun-location.PNG" title="Sun Location" class="mr-1">
+                                            <span class="far fa-2x fa-map"></span>
+                                            <span class="sr-only">Location</span>
+                                        </a>
 
                                         <a data-fancybox href="voyage/videos/sun-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
@@ -447,7 +487,7 @@
 
                                     <div class="form-group">
                                         <label>Order</label>
-                                        <input type="text" class="form-control" />
+                                        <input type="text" class="form-control" disabled value="9" />
                                     </div>
                                 </div>
                             </div>
@@ -460,10 +500,17 @@
                                     <h3 class="card-title ">Mercury</h3>
 
                                     <p>
-                                        <a data-fancybox href="../images/mercury-symbol.PNG" title="Mercury Symbol"><span
-                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
-                                        <a data-fancybox href="../images/mercury-location.PNG" title="Mercury Location"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                        <a data-fancybox href="../images/mercury-symbol.PNG" title="Mercury Symbol"
+                                            class="mr-1">
+                                            <span class="fas fa-2x fa-moon"></span>
+                                            <span class="sr-only">Symbol</span>
+                                        </a>
+
+                                        <a data-fancybox href="../images/mercury-location.PNG" title="Mercury Location"
+                                            class="mr-1">
+                                            <span class="far fa-2x fa-map"></span>
+                                            <span class="sr-only">Location</span>
+                                        </a>
 
                                         <a data-fancybox href="voyage/videos/mercury-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
@@ -508,10 +555,15 @@
                                     <h3 class="card-title ">Venus</h3>
 
                                     <p>
-                                        <a data-fancybox href="../images/venus-symbol.PNG" title="Venus Symbol"><span
-                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
-                                        <a data-fancybox href="../images/venus-location.PNG" title="Venus Location"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                        <a data-fancybox href="../images/venus-symbol.PNG" title="Venus Symbol" class="mr-1">
+                                            <span class="fas fa-2x fa-moon"></span>
+                                            <span class="sr-only">Symbol</span>
+                                        </a>
+
+                                        <!-- <a data-fancybox href="../images/venus-location.PNG" title="Venus Location" class="mr-1">
+                                            <span class="far fa-2x fa-map"></span>
+                                            <span class="sr-only">Location</span>
+                                        </a> -->
 
                                         <a data-fancybox href="voyage/videos/venus-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
@@ -554,10 +606,15 @@
                                     <h3 class="card-title ">Moon</h3>
 
                                     <p>
-                                        <a data-fancybox href="../images/moon-symbol.PNG" title="Moon Symbol"><span
-                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
-                                        <a data-fancybox href="../images/moon-location.PNG" title="Moon Location"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                        <a data-fancybox href="../images/moon-symbol.PNG" title="Moon Symbol" class="mr-1">
+                                            <span class="fas fa-2x fa-moon"></span>
+                                            <span class="sr-only">Symbol</span>
+                                        </a>
+
+                                        <a data-fancybox href="../images/moon-location.PNG" title="Moon Location" class="mr-1">
+                                            <span class="far fa-2x fa-map">
+                                            </span><span class="sr-only">Location</span>
+                                        </a>
 
                                         <a data-fancybox href="voyage/videos/moon-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
@@ -603,9 +660,11 @@
                                             <span class="fas fa-2x fa-moon">
                                             </span><span class="sr-only">Symbol</span>
                                         </a>
-                                        <a data-fancybox href="../images/mars-location.PNG" title="Mars Location" class="mr-1"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
-                                                
+                                        <a data-fancybox href="../images/mars-location.PNG" title="Mars Location" class="mr-1">
+                                            <span class="far fa-2x fa-map"></span>
+                                            <span class="sr-only">Location</span>
+                                        </a>
+
                                         <a data-fancybox href="voyage/videos/mars-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
                                             <span class="sr-only">Video Location</span>
@@ -651,10 +710,15 @@
                                     <h3 class="card-title ">Jupiter</h3>
 
                                     <p>
-                                        <a data-fancybox href="../images/jupiter-symbol.PNG" title="Jupiter Symbol"><span
-                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
-                                        <a data-fancybox href="../images/jupiter-location.PNG" title="Jupiter Location"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                        <a data-fancybox href="../images/jupiter-symbol.PNG" title="Jupiter Symbol">
+                                            <span class="fas fa-2x fa-moon"></span>
+                                            <span class="sr-only">Symbol</span>
+                                        </a>
+
+                                        <a data-fancybox href="../images/jupiter-location.PNG" title="Jupiter Location">
+                                            <span class="far fa-2x fa-map"></span>
+                                            <span class="sr-only">Location</span>
+                                        </a>
                                     </p>
 
                                     <label for="Jupiter-symbol" class="h5">
@@ -762,10 +826,16 @@
                                     <h3 class="card-title ">Uranus</h3>
 
                                     <p>
-                                        <a data-fancybox href="../images/uranus-symbol.PNG" title="Uranus Symbol"><span
-                                                class="fas fa-2x fa-moon"></span><span class="sr-only">Symbol</span></a>
-                                        <a data-fancybox href="../images/uranus-location.PNG" title="Uranus Location"><span
-                                                class="far fa-2x fa-map"></span><span class="sr-only">Location</span></a>
+                                        <a data-fancybox href="../images/uranus-symbol.PNG" title="Uranus Symbol" class="mr-1">
+                                            <span class="fas fa-2x fa-moon"></span>
+                                            <span class="sr-only">Symbol</span>
+                                        </a>
+
+                                        <a data-fancybox href="../images/uranus-location.PNG" title="Uranus Location"
+                                            class="mr-1">
+                                            <span class="far fa-2x fa-map"></span>
+                                            <span class="sr-only">Location</span>
+                                        </a>
 
                                         <a data-fancybox href="voyage/videos/uranus-location.mp4" class="mr-1">
                                             <span class="fa fa-2x fa-video"></span>
@@ -806,6 +876,67 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="kraken-modal" tabindex="-1" role="dialog" aria-labelledby="kraken-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="kraken-modal">Kraken</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <p>In order to receive a <i>free</i> Kraken, you must appease the Kraken chest.
+                        The chest will spawn in one of five locations. In order to open it, you must skill a <b>Stoker</b> and pick up the key he drops.
+                        Once you have the key, open the chest and begin killing zombies near it. Blue orbs will fly from a fallen zombie's body into the chest.
+                    </p>
+                    <p>
+                        After a certain number of kills, the chest will be "appeased" and will close, then teleport to one of the other four locations.
+                        You must repeat this process two more times.
+                        Once complete, the chest will reveal an item.
+                        If the item is a compass, you must go to the <b>Boat Deck</b> outside of the Grand Staircase.
+                        If the item is a telescope, you must go to the <b>Poop Deck</b> near the Artifact spawn.
+                    </p>
+                    <p>
+                        Once you arrive at the correct location after appeasing the chest, a large tentacle will drop a free Kraken onto a nearby box.
+                        Any player may pick it up. It does not depend on who opened or completed the chest.
+                    </p>
+
+                    <div class="alert alert-primary">
+                        <h6 class="alert-heading">
+                            <span class="fas fa-question-circle"></span>
+                            Kraken Chest Locations
+                        </h6>
+
+                        <ul>
+                            <li>Galley - In the kitchen in a corner. Opposite side that the symbol and clock are located on.</li>
+                            <li>Provisions - Meat Locker. The section found when navigating from the Poop Deck to the Engine Room</li>
+                            <li>Turbine Room - Engine Room Pack-a-Punch Location. Go behind the Pack-a-Punch and to the right.</li>
+                            <li>State Rooms - In the small entrance close to the Grand Staircase leading to the Millionaire Suites.</li>
+                            <li>Mail Room</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="alert alert-primary">
+                            <h6 class="alert-heading">
+                                <span class="fas fa-question-circle"></span>
+                                Weapon Locations
+                            </h6>
+    
+                            <ul>
+                                <li>Compass - Boat Deck. Top floor of the boat, near the top of the Grand Staircase</li>
+                                <li>Poop Deck - Area near the Artifact Spawn. Where you construct the shield.</li>
+                            </ul>
+                            
+                        </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
