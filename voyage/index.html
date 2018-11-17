@@ -37,22 +37,22 @@
                     <a class="nav-link" href="#Outlets">Outlets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#kraken-modal" data-toggle="modal" data-target="#kraken-modal">Kraken</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#distillery">Distillery</a>
-                    </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#pipes">Pipes</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#Planets">Planets</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#shield">Shield</a>
-                </li>
                 
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu-other" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Sections</a>
+                        <div class="dropdown-menu" aria-labelledby="menu-other">
+                          <a class="dropdown-item" href="#draining">Draining/Valves</a>
+                          <a class="dropdown-item" href="#kraken-modal" data-toggle="modal" data-target="#kraken-modal">Kraken Gun <i class="far fa-clone fa-flip-horizontal" aria-hidden="true"></i></a>
+                          <a class="dropdown-item" href="#distillery">Distillery</a>
+                          <a class="dropdown-item" href="#shield">Ballistic Shield</a>
+                        </div>
+                      </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
@@ -79,16 +79,16 @@
             When you spawn, you will find yourself on the front end (bow/Forecastle) of the ship.
             Your first goal will be to unlock doors until you reach the other end (stern/Poop Deck).
             Once there, you will see a glowing object suspended above a catwalk.
-            Climb onto the catwalk and interact with the Artifact to open additional areas of the ship and begin the Easter Egg.
+            Climb onto the catwalk and interact with the <a data-fancybox href="images/artifact-1.JPG">Artifact</a> to open additional areas of the ship and begin the Easter Egg.
         </p>
 
         <p>
             Four terminals will appear across the ship.
             <ul>
-                <li>Poop Deck</li>
-                <li>Turbine Room</li>
-                <li>Grand Staircase</li>
-                <li>Cargo Hold</li>
+                <li><a data-fancybox href="images/terminal-earth.JPG">Poop Deck (Earth)</a></li>
+                <li><a data-fancybox href="images/terminal-fire.JPG">Turbine Room (Fire)</a></li>
+                <li><a data-fancybox href="images/terminal-air.JPG">Grand Staircase (Air)</a></li>
+                <li><a data-fancybox href="images/terminal-water.JPG">Cargo Hold (Water)</a></li>
             </ul>
             The first of these terminals will be located near where you grabbed the artifact.
             Interact with the terminal to unlock it.
@@ -97,30 +97,85 @@
             
         </p>
 
-        <div class="alert alert-primary">
-            <h3 class="alert-heading"><span class="fas fa-info-circle"></span> Unlocking All Locations</h3>
+        <div class="row">
+            <div class="col">
+                    <div class="alert alert-info">
+                            <h3 class="alert-heading h4"><span class="fas fa-info-circle"></span> Locating the Pack-a-Punch</h3>
+                
+                            <p>
+                                    You can determine the current location of the Pack-a-Punch by walking up to a terminal and reading the text that appears on screen.
+                                    Each of the locations also correlates with an elemental symbol (see <a href="#Clocks">Clocks</a>). 
+                                    Once learned, they can be used to determine the location from a distance.
+                                    The active terminal's element will be lit up.
+                                </p>
+                        </div>
+            </div>
 
-            <p>
-                    Once you have an elemental Kraken, you may unlock the Pack-a-Punch in all locations.
-                    If you do not yet have one, you can follow the <a href="#kraken-modal" data-toggle="modal" data-target="#kraken-modal">Kraken</a> guide and <a href="#distillery">Distillery</a> guide.
-                </p>
-        
-                <p>
-                    In the engine room, use the Kraken to shoot the four moving pistons in the center of the room.
-                    They will begin smoking and stop moving.
-                </p>
-        
-                <p>
-                    Six blinking red lights will turn on around the room.
-                    Turn the wheel located near each light.
-                </p>
-        
-                <p>
-                    Once turning all four wheels, go to the Turbine Room and interact with the switch on the wall next to the entrance.
-                    The Pack-a-Punch will now be available in all four locations.
-                </p>
+            <div class="col-12 col-md-8">
+                    <div class="alert alert-primary">
+                            <h3 class="alert-heading h3"><span class="fas fa-exclamation-circle"></span> Unlocking All Locations</h3>
+                
+                            <p>
+                                    Once you have an elemental Kraken, you may unlock the Pack-a-Punch in all locations.
+                                    If you do not yet have one, you can follow the <a href="#kraken-modal" data-toggle="modal" data-target="#kraken-modal">Kraken</a> guide and <a href="#distillery">Distillery</a> guide.
+                                </p>
+                        
+                                <p>
+                                    In the engine room, use the Kraken to shoot the four moving pistons in the center of the room.
+                                    They will begin smoking and stop moving.
+                                </p>
+                        
+                                <p>
+                                    Six blinking red lights will turn on around the room.
+                                    Turn the wheel located near each light.
+                                </p>
+                        
+                                <p>
+                                    Once turning all four wheels, go to the Turbine Room and interact with the switch on the wall next to the entrance.
+                                    The Pack-a-Punch will now be available in all four locations.
+                                </p>
+                        </div>
+            </div>
         </div>
         
+    </section>
+
+    <section id="draining" class="container">
+        <h2 class="border-bottom display-4">
+            Draining
+        </h2>
+
+        <div class="row">
+            <div class="col">
+                <p>
+                    When you reach the engine room and cargo hold, they will be flooded.
+                    You can drain these areas easily by using a well-lit wall valve located somewhere under water.
+                </p>
+
+                <ul>
+                    <li>
+                        <a data-fancybox href="images/valve-boiler_room.JPG">
+                            Boiler/Furnace Room (Engine Room) 
+                        </a>
+                        <a data-fancybox href="https://youtu.be/r51oAnT6hDM">
+                            <span class="fab fa-youtube"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-fancybox href="images/valve-cargo_hold.JPG">
+                            Cargo Hold
+                        </a>
+                        <a data-fancybox href="https://youtu.be/N4PTQSlHS5o">
+                            <span class="fab fa-youtube"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Once the <a href="#pipes">Pipes</a> Easter Egg is completed, these sections will re-flood, but can be drained again using the same valves.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="container">
@@ -138,6 +193,10 @@
                             <span class="fas fa-redo"></span>
                         </button>
                     </h2>
+
+                    <p class="text-muted">
+                        See the <a href="#clocks-modal" title="Help" data-toggle="modal" data-target="#clocks-modal"><b>Help</b></a> section for more info on completing the clocks.
+                    </p>
 
                     <div class="row">
 
@@ -296,6 +355,8 @@
                         </div>
 
                     </div>
+                    <br />
+
                     <div class="row">
                         <div class="col">
                             <div class="alert alert-primary">
@@ -304,12 +365,31 @@
                                 <p>The clocks will appear in four of the six locations listed below:</p>
                                 <ul>
                                     <li>1st Class Lounge - Across from the Zeus Altar</li>
-                                    <li>3rd Class Berths - Bottom of the wooden staircase</li>
+                                    <li>
+                                        <a data-fancybox href="images/clock-berths.JPG">
+                                            3rd Class Berths
+                                        </a>
+                                        <a data-fancybox href="https://youtu.be/G4ilksf4IDo"><span class="fab fa-youtube"></span></a>
+                                        - Bottom of the wooden staircase
+                                    </li>
                                     <li>Bridge - Inside the room with the wheel</li>
                                     <li>Kitchen/Galley</li>
                                     <li>Grand Staircase - Top Floor at the head of the stairs</li>
                                     <li>Mail Room</li>
                                 </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="alert alert-info">
+                                <h3 class="alert-heading h5">
+                                    <span class="fas fa-check-circle"></span>
+                                    Tip
+                                </h3>
+
+                                <p>
+                                    It is not necessary to record the locations of the clocks.
+                                    However, if a mistake is made, knowing the locations can help correct issues more quickly.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -488,12 +568,19 @@
 
                             <p>The outlets will appear in four of the six locations listed below:</p>
                             <ul>
-                                <li>Aft Deck - Behind a barricaded door, to the left of a generator</li>
-                                <li>1st Class Lounge - Near the Zeus altar</li>
-                                <li>3rd Class Berths - Bottom of the metal staircase on a white wall</li>
                                 <li>
-                                    <a data-fancybox href="https://youtu.be/q4Tk9Wieb_c">Dining Hall</a> - Near the Ra
-                                    altar
+                                    <a data-fancybox href="images/outlet-aft.JPG">Aft Deck</a>
+                                    <a data-fancybox href="https://youtu.be/YkXYMVV3mPk"><span class="fab fa-youtube"></span></a>
+                                     - Behind a barricaded door, to the left of a generator</li>
+                                <li>1st Class Lounge - Near the Zeus altar</li>
+                                <li>
+                                    <a data-fancybox href="images/outlet-berths.JPG">3rd Class Berths</a> 
+                                    <a data-fancybox href="https://youtu.be/Y2KOgnJgNxM"><span class="fab fa-youtube"></span></a>
+                                        - Bottom of the metal staircase on a white wall</li>
+                                <li>
+                                    Dining Hall
+                                    <a data-fancybox href="https://youtu.be/q4Tk9Wieb_c"><span class="fab fa-youtube"></span></a>
+                                     - Near the Ra altar
                                 </li>
                                 <li>Grand Staircase - Between the clock and the symbol location</li>
                                 <li>State Rooms - In a room beside some paintings on the floor</li>
@@ -1202,7 +1289,7 @@
                                     <p class="card-title">Locations</p>
                                     <ul class="pl-3">
                                         <li>                                         
-                                            <a data-fancybox href="images/shield-top-location-1.PNG">
+                                            <a data-fancybox href="images/shield-piece-1-location1.jpg">
                                                 Bridge 
                                             </a>
         
@@ -1212,7 +1299,9 @@
                                             - A small maintenance room down the hall from the main wheel
                                         </li>
                                         <li>
-                                            Bridge - On the railing of a small hallway between the bridge and the Grand Staircase
+                                                <a data-fancybox href="images/shield-piece-1-location2.jpg">
+                                                    Bridge 
+                                                </a> - On the railing of a small hallway between the bridge and the Grand Staircase
                                         </li>
                                         <li>Bridge - Outside on a railing to the left of the Bridge (when looking towards the spawn)</li>
                                     </ul>
@@ -1242,6 +1331,9 @@
                                                 </li>
                                                 <li>
                                                     State Rooms - On a rolling chair in one of the rooms, next to a small wardrobe.
+                                                </li>
+                                                <li>
+                                                    <a data-fancybox href="images/shield-piece-2-location2.JPG">State Rooms</a> - On a rolling chair in one of the rooms near the shotgun spawn
                                                 </li>
                                             </ul>
                                         </div>
@@ -1287,7 +1379,10 @@
                     
                 </form>
 
-                <h2 id="shield2" class="display-4 border-bottom">Upgraded Shield</h2>
+                <h2 id="shield2" class="display-4 border-bottom">
+                    Upgraded Shield
+                    <span class="text-muted">(Sylvann Gaurd)</span>
+                </h2>
 
                 <p>
                     Once the shield has been created, it can be upgraded via another series of steps.
