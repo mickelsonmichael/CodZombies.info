@@ -14,6 +14,24 @@ body.voyage {
 @media (min-width: 700px) {
     body.voyage {
         background-image: url('../voyage/images/background.jpg');
+    }
+
+    body.bloodofthedead {
+        background-image: url('../blood/images/background.jpg');
+    }
+
+    body.ix {
+        background-image: url('../ix/images/background.jpg');
+    }
+
+    body.classified {
+        background-image: url('../classified/images/background.jpg');
+    }
+
+    body.voyage,
+    body.bloodofthedead,
+    body.ix,
+    body.classified {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -21,7 +39,10 @@ body.voyage {
         
     }
 
-    body.voyage::after {
+    body.voyage::after,
+    body.bloodofthedead::after,
+    body.ix::after,
+    body.classified::after {
         display: block;
         content: '';
         background-color: #333;
