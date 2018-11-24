@@ -123,7 +123,7 @@
 
             <div class="col-12 col-md-8">
                 <div class="alert alert-primary">
-                    <h3 class="alert-heading h3"><span class="fas fa-exclamation-circle"></span> Unlocking All
+                    <h3 class="alert-heading h4"><span class="fas fa-exclamation-circle"></span> Unlocking All
                         Locations</h3>
 
                     <p>
@@ -134,20 +134,42 @@
                     </p>
 
                     <p>
-                        In the engine room, use the Kraken to shoot the four moving pistons in the center of the room.
+                        In the engine room, use the Kraken to shoot the four moving <a data-fancybox href="images/pap/piston.JPG">pistons</a> in the center of the room.
                         They will begin smoking and stop moving.
                     </p>
 
                     <p>
-                        Six blinking red lights will turn on around the room.
-                        Turn the wheel located near each light.
+                        Above the pistons, there will be several <a data-fancybox href="images/pap/valves.JPG">red wheels</a> with matching <a data-fancybox href="images/pap/lights.JPG">lights</a> further above them (3 per piston, 12 total).
+                        Looking up at the lights, turn the wheels that have a flashing light.
+                        This light can be red or white.
+                        If a wheel does not turn right away, holding the interact key (<kbd>F</kbd> on PC) will work.
+                        You must turn each wheel so the handle-bar is facing away from the light.
+                        The bars below the non-flashing lights must be turned toward the light.
                     </p>
 
                     <p>
-                        Once turning all four wheels, go to the Turbine Room and interact with the switch on the wall
-                        next to the entrance.
-                        The Pack-a-Punch will now be available in all four locations.
+                        There should be six flashing lights.
+                        Once all six wheels have been turned, step into the Turbine Room and look to your right.
+                        Against the wall there will be a <a data-fancybox href="images/pap/switch.JPG">lever</a>.
+                        Pull it to complete the upgrade.
                     </p>
+
+                    <p>
+                        The new Pack-a-Punch will spawn in all locations, cost 5000 points to upgrade, but will also refill the ammo of your weapon.
+                        This effect will last <b>one round</b>, after which the Pack-a-Punch will return to its normal rotation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-warning">
+                        <span class="fas fa-exclamation-circle"></span>
+                        A glitch may occur if you attempt to upgrade the Pack-a-Punch before completing the <a href="#pipes">Pipes</a> section of the easter egg.
+                        The Pack-a-Punch will revert to one location and will not automatically move to the Turbine Room once it is flooded.
+                        You may be forced to wait several round before being able to upgrade the Artififact.
+                        Therefore it is best to use "Unlocking All Locations" Easter Egg after you have all the pipes leaking, allowing you to instantly Pack-a-Punch the Artifact.
                 </div>
             </div>
         </div>
@@ -1507,11 +1529,18 @@
 
                 </form>
 
+                <br />
+
                 <form name="shield-upgrade">
 
-                    <h2 id="shield2" class="display-4 border-bottom">
-                        Upgraded Shield<wbr />
-                        <span class="text-muted">(Sylvann Guard)</span>
+                    <h2 id="shield2" class="display-4 border-bottom d-flex align-items-center">
+                        <span class="mr-auto">
+                            Upgraded Shield<wbr />
+                            <span class="text-muted">(Sylvann Guard)</span>
+                        </span>
+                        <button type="reset" class="btn btn-lg btn-primary flex-shrink-1" title="Reset Clocks">
+                            <span class="fas fa-redo"></span>
+                        </button>
                     </h2>
 
 
@@ -1548,7 +1577,13 @@
                                             <span class="far fa-image"></span>
                                         </a>
                                     </p>
-                                    <input type="number" class="form-control" placeholder="Code" />
+                                    <select class="form-control">
+                                        <option selected>Code</option>
+                                        <option>1404</option>
+                                        <option>1912</option>
+                                        <option>2340</option>
+                                        <option>4250</option>
+                                    </select>
                                     <br />
                                     <label for="skull-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="skull-done" id="skull-done" />
@@ -1568,7 +1603,13 @@
                                             <span class="far fa-image"></span>
                                         </a>
                                     </p>
-                                    <input type="number" class="form-control" placeholder="Code" />
+                                    <select class="form-control">
+                                        <option selected>Code</option>
+                                        <option>1404</option>
+                                        <option>1912</option>
+                                        <option>2340</option>
+                                        <option>4250</option>
+                                    </select>
                                     <br />
                                     <label for="longbone-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="longbone-done" id="longbone-done" />
@@ -1588,9 +1629,13 @@
                                             <span class="far fa-image"></span>
                                         </a>
                                     </p>
-
-
-                                    <input type="number" class="form-control" placeholder="Code" />
+                                    <select class="form-control">
+                                        <option selected>Code</option>
+                                        <option>1404</option>
+                                        <option>1912</option>
+                                        <option>2340</option>
+                                        <option>4250</option>
+                                    </select>
                                     <br />
                                     <label for="hand-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="hand-done" id="hand-done" />
@@ -1610,7 +1655,13 @@
                                             <span class="far fa-image"></span>
                                         </a>
                                     </p>
-                                    <input type="number" class="form-control" placeholder="Code" />
+                                    <select class="form-control">
+                                        <option selected>Code</option>
+                                        <option>1404</option>
+                                        <option>1912</option>
+                                        <option>2340</option>
+                                        <option>4250</option>
+                                    </select>
                                     <br />
                                     <label for="foot-done" class="h5">
                                         <input type="checkbox" class="d-none chk" name="foot-done" id="foot-done" />
@@ -1737,6 +1788,12 @@
                                 - Lower Section at the bottom of the stairs. Next to one of the <a href="#Clocks">Clocks</a>
                             </li>
                         </ul>
+                    </p>
+
+                    <p>
+                        You may shoot the vials at any point, including at the beginning of the game. 
+                        It is recommended to start working on the vials as early as possible, especially if you're trying to complete the shield in as few rounds as possible.
+                        You may collect one vial per round.
                     </p>
 
                     <p>
@@ -2031,17 +2088,26 @@
                             </h6>
 
                             <ul>
-                                <li>Galley - In the kitchen in a corner. Opposite side that the symbol and clock are
-                                    located on.</li>
-                                <li>Provisions - Meat Locker. The section found when navigating from the Poop Deck to
-                                    the Engine Room</li>
-                                <li>Turbine Room - Engine Room Pack-a-Punch Location. Go behind the Pack-a-Punch and to
-                                    the right.</li>
-                                <li>State Rooms - In the small entrance close to the Grand Staircase leading to the
-                                    Millionaire Suites.</li>
+                                <li>
+                                    Galley - In the kitchen in a corner. Opposite side that the symbol and clock are
+                                    located on.
+                                </li>
+                                <li>
+                                    Provisions - Meat Locker. The section found when navigating from the Poop Deck to
+                                    the Engine Room
+                                </li>
+                                <li>
+                                    <a data-fancybox href="images/kraken/chest-turbine.JPG">Turbine Room</a> - Engine Room Pack-a-Punch Location. Go behind the Pack-a-Punch and to
+                                    the right.
+                                </li>
+                                <li>
+                                    <a data-fancybox href="images/kraken/chest-state.JPG">State Rooms</a> - In the small entrance close to the Grand Staircase leading to the
+                                    Millionaire Suites.
+                                </li>
                                 <li>
                                     <a data-fancybox href="images/kraken/chest-mailroom.JPG">Mail Room</a>
-                                    - Directly to the right of the staircase before the Cargo Hold</li>
+                                    - Directly to the right of the staircase before the Cargo Hold
+                                </li>
                             </ul>
 
                         </div>
@@ -2053,10 +2119,13 @@
                             </h6>
 
                             <ul>
+                                <li><a data-fancybox href="images/kraken/reward-binoculars.JPG">Binoculars</a>
+                                     - <a data-fancybox href="images/kraken/kraken-forecastle.JPG">Forecastle.</a> The spawn; Up the staircase to the right of the Danu Shrine.</li>
                                 <li>Compass - Boat Deck. Top floor of the boat, near the top of the Grand Staircase</li>
                                 <li>Telescope - Poop Deck. Area near the Artifact Spawn. Where you construct the
                                     shield.</li>
                                 <li>Globe - Mid Deck. Area near the exit to the Galley.</li>
+                                <li>Tongs - Aft Deck.</li>
                             </ul>
 
                         </div>
