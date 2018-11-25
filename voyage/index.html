@@ -9,6 +9,7 @@
 
     <title>Black Ops 4 - Voyage of Despair</title>
 
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
@@ -1120,7 +1121,7 @@
                                 used to <a href="#shield2">upgrade the Ballistic Shield</a>.
                                 Once interacted with, the planets on the display will begin to light up in a particular
                                 order.
-                                Use the section below to record the order in which they light up.
+                                Use the section below (or the <a href="#planets-alt">Alternative section</a>) to record the order in which they light up.
                                 The sun will always be the last.
                             </p>
 
@@ -1622,10 +1623,83 @@
                         needed.
                     </div>
                 </form>
-
             </div>
         </div>
 
+        <hr />
+
+        <div id="planets-alt" class="row">
+            <div class="col">
+                <div class="d-flex">
+                    <h3 class="mr-auto">Alternative Sorter</h3>
+                    <button type="button" onclick="resetPlanets()" class="btn btn-primary btn-lg flex-shrink-1">
+                        <span class="fas fa-redo"></span>
+                    </button>
+                </div>
+
+                <p>
+                    Click and drag a planet between the two lists to keep track of their order.
+                    The planets are initially sorted in alphabetical order for convenience.
+                    The sun always comes last.
+                    Use the <a href="javascript:void(0);" onclick="resetPlanets();">reset button</a> above to reset the order.
+                </p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul id="planets-from" class="planets-list">
+                                    <li class="planets-list__planet d-flex align-items-center">
+                                        <span class="mr-auto">Jupiter</span>
+                                        <span class="fas fa-grip-vertical"></span>
+                                    </li>
+                                    <li class="planets-list__planet d-flex align-items-center">
+                                            <span class="mr-auto">Mars</span>
+                                            <span class="fas fa-grip-vertical"></span>
+                                        </li>
+                                        <li class="planets-list__planet d-flex align-items-center">
+                                                <span class="mr-auto">Mercury</span>
+                                                <span class="fas fa-grip-vertical"></span>
+                                            </li>
+                                            <li class="planets-list__planet d-flex align-items-center">
+                                                    <span class="mr-auto">Moon</span>
+                                                    <span class="fas fa-grip-vertical"></span>
+                                                </li>
+                                                <li class="planets-list__planet d-flex align-items-center">
+                                                        <span class="mr-auto">Neptune</span>
+                                                        <span class="fas fa-grip-vertical"></span>
+                                                    </li>
+                                                    <li class="planets-list__planet d-flex align-items-center">
+                                                            <span class="mr-auto">Saturn</span>
+                                                            <span class="fas fa-grip-vertical"></span>
+                                                        </li>
+                                                        <li class="planets-list__planet d-flex align-items-center">
+                                                                <span class="mr-auto">Venus</span>
+                                                                <span class="fas fa-grip-vertical"></span>
+                                                            </li>
+                                                            <li class="planets-list__planet d-flex align-items-center">
+                                                                    <span class="mr-auto">Uranus</span>
+                                                                    <span class="fas fa-grip-vertical"></span>
+                                                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul id="planets-to" class="planets-list">
+                                        <li class="planets-list__planet d-flex align-items-center">
+                                                <span class="mr-auto">Sun</span>
+                                                <span class="fas fa-grip-vertical"></span>
+                                            </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -2459,6 +2533,8 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -2466,6 +2542,7 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 
 
+    <script src="../js/planets.js"></script>
     <script src="../js/zombies.js"></script>
 </body>
 
