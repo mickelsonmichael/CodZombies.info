@@ -10,3 +10,11 @@
 ### Added
 - Initial creation of page
 - Added brief Pack-a-Punch guide
+
+## [0.1.0] 2018-12-16
+### Added
+- Added Viking Funeral section
+- Added Special Enemies section
+- Added additional nav dropdown list
+- Added images for Ra Tower sections
+- Added images for Danu tower sections
