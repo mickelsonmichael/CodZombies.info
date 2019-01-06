@@ -52,6 +52,31 @@ body.voyage {
     color: inherit;
 }
 
+.symbol-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.symbol-list li {
+    padding: .5em;
+    margin: .5em;
+    background-color: #464c52;
+    display: inline-block;
+    font-size: 120%;
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+    min-width: 250px;
+}
+
+.symbol-list li:nth-of-type(odd) {
+    background-color: #232323;
+}
+
+.symbol-list li img {
+    max-height: 75px;
+}
+
 @media (min-width: 700px) {
     body.voyage {
         background-image: url('../voyage/images/background.jpg');
