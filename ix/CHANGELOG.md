@@ -18,3 +18,8 @@
 - Added additional nav dropdown list
 - Added images for Ra Tower sections
 - Added images for Danu tower sections
+
+## [0.2.0] 2019-01-06
+### Added
+- Added main quest guide
+- Added symbols for Ra section of main quest
